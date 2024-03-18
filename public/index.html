@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="../src/calculater.css">
+    <script src="../src/calculater.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+</head>
+<body>
+    <div id="container" class="big-container" style="border: 2px solid black; width: 520px; min-width: 200px;overflow: hidden;">
+        <header  >
+            <input type="text" id="numbers" onkeydown="down(event)" style="height: 100px; width: 500px; border:2px solid black; margin-top: 3px; font-size: 50px;">
+
+        </header>
+        <section style="display: flex; width: 100%; min-width: 50%;">
+            <div class="part_one">
+                <div class="row-1" >
+                    <input type="button" class="input" value="1" onclick="clic('1')" style="width: 80px; height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="2" onclick="clic('2')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="3" onclick="clic('3')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                </div>
+                <div class="row-2">
+                    <input type="button" class="input" value="4" onclick="clic('4')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="5" onclick="clic('5')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="6" onclick="clic('6')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                </div>
+                <div class="row-3">
+                    <input type="button" class="input" value="7" onclick="clic('7')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="8" onclick="clic('8')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="9" onclick="clic('9')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                </div>
+                <div class="row-4">
+                    <input type="button" class="input" value="0" onclick="clic('0')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="." onclick="clic('.')" style="width: 80px;height: 50px;border-radius: 50%;" >
+                    <input type="button" class="input" value="delete"  style="height:50px; width: 80px;" onclick="up()">
+                </div>
+            </div>
+            <div class="part_two">
+                <button type="button" id="AC"class="input" style="height: 213px;width: 80px;">AC</button>
+
+            </div>
+            <div class="part_three">
+                <div class="number_row1">
+                    <input type="button" value="+"class="input" onclick="clic('+')" style="width: 80px; height: 50px;" >
+                    <input type="button" value="-"class="input" onclick="clic('-')" style="width: 80px; height: 50px;" >
+
+                </div>
+                <div class="number_row2">
+                    <input type="button" value="x"class="input" onclick="clic('*')" style="width: 80px; height: 50px;" >
+                    <input type="button" value="/"class="input" onclick="clic('/')" style="width: 80px; height: 50px;" >
+
+                </div>
+                <div class="number_row3">
+                    <input type="button" value="("class="input" onclick="clic('(')" style="width: 80px; height: 50px;" >
+                    <input type="button" value=")"class="input" onclick="clic(')')" style="width: 80px; height: 50px;" >
+
+                </div>
+                <div class="number_row4">
+                    <button type="button" onclick="cal()"class="input" style="height: 50px;width: 165px;">=</button>
+
+                </div>
+
+
+            </div>
+        </section>
+
+    </div>
+    
+</body>
+</html>

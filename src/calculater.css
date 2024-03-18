@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-image: url(../src/images/images.jpeg);
+   background-position: center;
+   background-size:contain;
+    height: 100vh;
+    width: 100%;
+    min-width: 10px;
+}
+.big-container{
+    background-color: #0881a3;
+}
+input{
+    margin: 2px;
+    position: static;
+    width: 100%;
+}
+button{
+    margin: 2px;
+}
+.input:active{
+    border:2px solid #3186b2;
+    box-shadow: 0px 0px 100px #00fff0;
+    transition: box-shadow 0.2s;
+
+}
+#container{
+    box-shadow: 0px 0px 100px black;
+    
+}
+#numbers{
+    text-shadow: 3px 3px 4px red;
+}
